@@ -1,3 +1,30 @@
-.red-text {
-    color: red
+/* type selectors*/
+p {
+    color: aqua;
 }
+/* Class selectors*/
+.red-text {
+    color: red;
+}
+/*ID selectors (use sparingly)*/
+#title {
+    background-color: red;
+}
+/*Grouping selectors*/
+.read,
+.unread {
+    color: white;
+    background-color: black;
+}
+/*Chaining selectors*/
+.subsection.header {
+    color: blue;
+}
+
+.subsection#preview {
+    color: green;
+  }
+  /*Decendant Combinator (classes seperated by a space)*/ 
+.ancestor .contents {
+    color: purple;
+  }
