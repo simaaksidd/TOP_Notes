@@ -35,7 +35,13 @@
 
 <h2>The Cascade</h2>
 <p>Sometimes CSS doesn't do what we want it to do. This may be because of three things: personal error, default browser styles, and the Cascade. The cascade is what determines which rules actually get applied to our HTML. There are different factors that the cascade uses to determine this.</p>
-<h3>specificity</h3>
-<p></p>
+<h3>Specificity</h3>
+<p>Sometimes an element will have multiple, conflicting declarations assigned to it, because of this, CSS has an order of <em>Specificity</em>.  The most specific CSS declaration is what the element will go with. Inline styles are the most specific, then all of the selectors we have mentioned follow in this order:</p>
+<ol>
+  <li>ID selectors (most specific)</li>
+  <li>Class selectors</li>
+  <li>Type selectors</li>
+<p>in the case that the element has an element that shares multiple declarations with the same level of specificity, then the one with more of that selector will take precidence. Ex: 2 class selectors takes precidence over one class selector</p>
+</ol>
 </body>
 </html>
