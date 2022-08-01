@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--Add this line of code to add CSS externally-->
+  <link rel="stylesheet" href="notes.css">
+  <!-- use these tags to add your CSS internally-->
+  <style></style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +45,18 @@
   <li>ID selectors (most specific)</li>
   <li>Class selectors</li>
   <li>Type selectors</li>
+</ol>
 <p>in the case that the element has an element that shares multiple declarations with the same level of specificity, then the one with more of that selector will take precidence. Ex: 2 class selectors takes precidence over one class selector</p>
+<h3>Inheritence</h3>
+<p>The parent class will always give topography based properties (color, font-size, font-family, etc.) to their child class unless the child has a class of its own. Properties of child classes override their parent class, even in cases of higher specificity. Ex: a child class would override a parent ID</p>
+<h3>The Rule Order</h3>
+<p>Finally, if both have the same amount of classes, the same specificity and no inheritence then the one which is last defined will be the declaration applied</p>
+<h2>External vs Internal vs Inline CSS</h2>
+<p>There are three main ways to add CSS to your html.</p>
+<ol>
+  <li>External is the most common, and is useful because it keeps your CSS separate from your HTML, which improves readability.</li>
+  <li>Internal is useful for a small amount of declarations and rules for one <b>specific</b> page</li>
+  <li>Inline adds styles directly to elements using the style attribute in a container tag. Its helpful for when you want one specific style for one specific element. This is the least recommended because its messy and can cause bugs.</li>
 </ol>
 </body>
 </html>
